@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TemperatureConversion;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace TemperatureConversion.Tests
 {
 	[TestClass()]
@@ -15,60 +10,60 @@ namespace TemperatureConversion.Tests
 		[TestMethod()] // C to F
 		public void Boiling_CelciusToFahrenheitTest()
 		{
-			double celcius = 100.00;
-			double expected = 212.00;
+			float celcius = 100.00f;
+			float expected = 212.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToFahrenheit(celcius);
+			float actual = float.Parse(convert.CelciusToFahrenheit(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // C to K
 		public void Boiling_CelciusToKelvinTest()
 		{
-			double celcius = 100.00;
-			double expected = 373.15;
+			float celcius = 100.00f;
+			float expected = 373.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToKelvin(celcius);
+			float actual = float.Parse(convert.CelciusToKelvin(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to C
 		public void Boiling_FahrenheitToCelciusTest()
 		{
-			double fahrenheit = 212.00;
-			double expected = 100.00;
+			float fahrenheit = 212.00f;
+			float expected = 100.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToCelcius(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToCelcius(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to K
 		public void Boiling_FahrenheitToKelvinTest()
 		{
-			double fahrenheit = 212.00;
-			double expected = 373.15;
+			float fahrenheit = 212.00f;
+			float expected = 373.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToKelvin(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToKelvin(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to C
 		public void Boiling_KelvinToCelciusTest()
 		{
-			double kelvin = 373.15;
-			double expected = 100.00;
+			float kelvin = 373.15f;
+			float expected = 100.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToCelcius(kelvin);
+			float actual = float.Parse(convert.KelvinToCelcius(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to F
 		public void Boiling_KelvinToFahrenheitTest()
 		{
-			double kelvin = 373.15;
-			double expected = 212.00;
+			float kelvin = 373.15f;
+			float expected = 212.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToFahrenheit(kelvin);
+			float actual = float.Parse(convert.KelvinToFahrenheit(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
@@ -77,60 +72,60 @@ namespace TemperatureConversion.Tests
 		[TestMethod()] // C to F
 		public void Freezing_CelciusToFahrenheitTest()
 		{
-			double celcius = 0.00;
-			double expected = 32.00;
+			float celcius = 0.00f;
+			float expected = 32.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToFahrenheit(celcius);
+			float actual = float.Parse(convert.CelciusToFahrenheit(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // C to K
 		public void Freezing_CelciusToKelvinTest()
 		{
-			double celcius = 0.00;
-			double expected = 273.15;
+			float celcius = 0.00f;
+			float expected = 273.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToKelvin(celcius);
+			float actual = float.Parse(convert.CelciusToKelvin(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to C
 		public void Freezing_FahrenheitToCelciusTest()
 		{
-			double fahrenheit = 32.00;
-			double expected = 0.00;
+			float fahrenheit = 32.00f;
+			float expected = 0.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToCelcius(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToCelcius(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to K
 		public void Freezing_FahrenheitToKelvinTest()
 		{
-			double fahrenheit = 32.00;
-			double expected = 273.15;
+			float fahrenheit = 32.00f;
+			float expected = 273.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToKelvin(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToKelvin(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to C
 		public void Freezing_KelvinToCelciusTest()
 		{
-			double kelvin = 273.15;
-			double expected = 0.00;
+			float kelvin = 273.15f;
+			float expected = 0.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToCelcius(kelvin);
+			float actual = float.Parse(convert.KelvinToCelcius(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to F
 		public void Freezing_KelvinToFahrenheitTest()
 		{
-			double kelvin = 273.15;
-			double expected = 32.00;
+			float kelvin = 273.15f;
+			float expected = 32.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToFahrenheit(kelvin);
+			float actual = float.Parse(convert.KelvinToFahrenheit(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
@@ -139,60 +134,60 @@ namespace TemperatureConversion.Tests
 		[TestMethod()] // C to F
 		public void Equal_CelciusToFahrenheitTest()
 		{
-			double celcius = -40.00;
-			double expected = -40.00;
+			float celcius = -40.00f;
+			float expected = -40.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToFahrenheit(celcius);
+			float actual = float.Parse(convert.CelciusToFahrenheit(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // C to K
 		public void Equal_CelciusToKelvinTest()
 		{
-			double celcius = -40.00;
-			double expected = 233.14999999999998;
+			float celcius = -40.00f;
+			float expected = 233.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToKelvin(celcius);
+			float actual = float.Parse(convert.CelciusToKelvin(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to C
 		public void Equal_FahrenheitToCelciusTest()
 		{
-			double fahrenheit = -40.00;
-			double expected = -40.00;
+			float fahrenheit = -40.00f;
+			float expected = -40.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToCelcius(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToCelcius(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to K
 		public void Equal_FahrenheitToKelvinTest()
 		{
-			double fahrenheit = -40.00;
-			double expected = 233.149;
+			float fahrenheit = -40.00f;
+			float expected = 233.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToKelvin(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToKelvin(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to C
 		public void Equal_KelvinToCelciusTest()
 		{
-			double kelvin = 233.150;
-			double expected = -39.999999999999972;
+			float kelvin = 233.15f;
+			float expected = -40.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToCelcius(kelvin);
+			float actual = float.Parse(convert.KelvinToCelcius(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to F
 		public void Equal_KelvinToFahrenheitTest()
 		{
-			double kelvin = 233.15;
-			double expected = -39.999;
+			float kelvin = 233.15f;
+			float expected = -40.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToFahrenheit(kelvin);
+			float actual = float.Parse(convert.KelvinToFahrenheit(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
@@ -201,60 +196,60 @@ namespace TemperatureConversion.Tests
 		[TestMethod()] // C to F
 		public void Zero_CelciusToFahrenheitTest()
 		{
-			double celcius = 0.00;
-			double expected = 32.00;
+			float celcius = 0.00f;
+			float expected = 32.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToFahrenheit(celcius);
+			float actual = float.Parse(convert.CelciusToFahrenheit(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // C to K
 		public void Zero_CelciusToKelvinTest()
 		{
-			double celcius = -273.15;
-			double expected = 0.00;
+			float celcius = -273.15f;
+			float expected = 0.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.CelciusToKelvin(celcius);
+			float actual = float.Parse(convert.CelciusToKelvin(celcius).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to C
 		public void Zero_FahrenheitToCelciusTest()
 		{
-			double fahrenheit = -459.67;
-			double expected = -273.14;
+			float fahrenheit = -459.67f;
+			float expected = -273.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToCelcius(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToCelcius(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // F to K
 		public void Zero_FahrenheitToKelvinTest()
 		{
-			double fahrenheit = -459.67;
-			double expected = 0.00;
+			float fahrenheit = -459.67f;
+			float expected = 0.00f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.FahrenheitToKelvin(fahrenheit);
+			float actual = float.Parse(convert.FahrenheitToKelvin(fahrenheit).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to C
 		public void Zero_KelvinToCelciusTest()
 		{
-			double kelvin = 0.00;
-			double expected = -273.15;
+			float kelvin = 0.00f;
+			float expected = -273.15f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToCelcius(kelvin);
+			float actual = float.Parse(convert.KelvinToCelcius(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 
 		[TestMethod()] // K to F
 		public void Zero_KelvinToFahrenheitTest()
 		{
-			double kelvin = 0.00;
-			double expected = -459.669;
+			float kelvin = 0.00f;
+			float expected = -459.67f;
 			TempConvert convert = new TempConvert();
-			double actual = convert.KelvinToFahrenheit(kelvin);
+			float actual = float.Parse(convert.KelvinToFahrenheit(kelvin).ToString("n2"));
 			Assert.AreEqual(expected, actual);
 		}
 	}

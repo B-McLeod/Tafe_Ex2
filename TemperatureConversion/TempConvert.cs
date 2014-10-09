@@ -4,48 +4,45 @@ namespace TemperatureConversion
 {
 	public class TempConvert
 	{
-		public double CelciusToFahrenheit(double celcius)
+		public float CelciusToFahrenheit(float celcius)
 		{	// C to F
-			double convertTempUnit = 1.8;
-			double result = celcius * convertTempUnit + 32;
+			float convertTempUnit = 1.8f;
+			float result = celcius * convertTempUnit + 32f;
 			return result;
 		}
 
-		public double CelciusToKelvin(double celcius)
+		public float CelciusToKelvin(float celcius)
 		{	// C to K
-			double convertTempUnit = 273.15;
-			double result = celcius + convertTempUnit;
+			float convertTempUnit = 273.15f;
+			float result = celcius + convertTempUnit;
 			return result;
 		}
 
-		public double FahrenheitToCelcius(double fahrenheit)
+		public float FahrenheitToCelcius(float fahrenheit)
 		{	// F to C
-			double convertTempUnit = 1.8;
-			double result = (fahrenheit - 32) / convertTempUnit;
-			result = Math.Truncate(100 * result) / 100;
+			float convertTempUnit = 1.8f;
+			float result = (fahrenheit - 32f) / convertTempUnit;
 			return result;
 		}
 
-		public double FahrenheitToKelvin(double fahrenheit)
+		public float FahrenheitToKelvin(float fahrenheit)
 		{	// F to K
-			double convertTempUnit = 1.8;
-			double result = (fahrenheit - 32) / convertTempUnit + 273.15;
-			result = Math.Truncate(1000 * result) / 1000;
+			float convertTempUnit = 1.8f;
+			float result = (fahrenheit - 32f) / convertTempUnit + 273.15f;
 			return result;
 		}
 
-		public double KelvinToCelcius(double kelvin)
+		public float KelvinToCelcius(float kelvin)
 		{	// K to C
-			double convertTempUnit = 273.15;
-			double result = kelvin - convertTempUnit;
+			float convertTempUnit = 273.15f;
+			float result = kelvin - convertTempUnit;
 			return result;
 		}
 
-		public double KelvinToFahrenheit(double kelvin)
+		public float KelvinToFahrenheit(float kelvin)
 		{	// K to F
-			double convertTempUnit = 1.8;
-			double result = (kelvin - 273.15) * convertTempUnit + 32;
-			result = Math.Truncate(1000 * result) / 1000;
+			float convertTempUnit = 1.8f;
+			float result = (kelvin - 273.15f) * convertTempUnit + 32f;
 			return result;
 		}
 	}
