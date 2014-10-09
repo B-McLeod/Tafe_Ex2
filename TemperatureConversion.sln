@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureConversion", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureConversionTests", "TemperatureConversionTests\TemperatureConversionTests.csproj", "{C2C84883-2C0C-42F5-8D3A-5B7FB8A6198E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempConversionWebApplication", "TempConversionWebApplication\TempConversionWebApplication.csproj", "{DAF9124A-B090-4948-AEE3-1D96C8385908}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C2C84883-2C0C-42F5-8D3A-5B7FB8A6198E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2C84883-2C0C-42F5-8D3A-5B7FB8A6198E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2C84883-2C0C-42F5-8D3A-5B7FB8A6198E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF9124A-B090-4948-AEE3-1D96C8385908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF9124A-B090-4948-AEE3-1D96C8385908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF9124A-B090-4948-AEE3-1D96C8385908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF9124A-B090-4948-AEE3-1D96C8385908}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
